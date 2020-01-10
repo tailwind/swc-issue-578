@@ -1,0 +1,16 @@
+{
+  "jsc": {
+    "parser": {
+      "syntax": "ecmascript",
+      "jsx": true,
+      "classProperty": true,
+      "functionBind": true
+    },
+    "transform": {
+    },
+    "target": "es5"
+  },
+  "module": {
+    "type": "commonjs"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "swc-issue-578",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "npm run compile-babel && npm run compile-swc",
+    "compile-babel": "babel index.js > babel.js ",
+    "compile-swc": "swc index.js > swc.js",
+    "babel": "npm run compile-babel && node -r @babel/register babel.js",
+    "swc": "npm run compile-swc && node -r @swc/register swc.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/cli": "^7.7.7",
+    "@babel/core": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "@babel/register": "^7.7.7",
+    "@swc/cli": "^0.1.21",
+    "@swc/core": "=1.1.9",
+    "@swc/register": "^0.1.4"
+  }
+}
